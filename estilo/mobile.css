@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 668px) {
+
+    body {
+        height: 99vh;
+    }
+    tr {
+        font-size: 12px;
+    }
+    
+     nav#menu {
+        max-width: 400px;
+     }
+
+     /*ÁREA CPU.CSS*/
+        #h1 {
+            display: block;
+        }
+     /*ÁREA CPU.CSS*/
+}

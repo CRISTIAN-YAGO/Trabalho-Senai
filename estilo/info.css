@@ -1,0 +1,164 @@
+@charset "UTF-8";
+* {
+  font-family: monospace;
+  padding: 0px;
+  margin: 0px;
+}
+ul li:hover:hover {
+  transition: 200ms;
+  background-color: rgba(255, 255, 255, 0.56);
+}
+ul a {
+  text-decoration: none;
+  color: wheat;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.9921568627);
+}
+
+#corpo-site {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header h1 {
+  color: rgba(255, 255, 255, 0.551);
+  padding: 5px;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+nav#menu {
+  width: 500px;
+  height: 600px;
+  background-image: url("../img/gif/fundo-aimd -.gif");
+  box-shadow: inset 2px 2px 19px 5px rgb(0, 0, 0);
+  border-radius: 15px;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.097);
+  /*configurações de icones da lista*/
+}
+ul li {
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+  text-indent: 15px;
+  border-radius: 3px;
+}
+ul #CPU {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #CPU::before {
+  content: url("../img/ico-cpu/favicon.ico");
+}
+ul #PMAE {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #PMAE::before {
+  content: url("../img/ico-placaMae/favicon.ico");
+}
+ul #RAM {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #RAM::before {
+  content: url("../img/ico-memoriaRAM/ram-inf.png");
+}
+ul #SSD {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #SSD::before {
+  content: url("../img/ico-ssd/ssd-info.png");
+}
+ul #W-COOLER {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #W-COOLER::before {
+  content: url("../img/ico-water-cooler/favicon.ico");
+}
+ul #GAB {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #GAB::before {
+  content: url("../img/ico-gabinete/favicon.ico");
+}
+ul #FONT {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #FONT::before {
+  content: url("../img/ico-fonte/favicon.ico");
+}
+ul #GPU {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #GPU::before {
+  content: url("../img/ico-placa_video/favicon.ico");
+}
+ul #TEC {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #TEC::before {
+  content: url("../img/ico-teclado/favicon.ico");
+}
+ul #MOU {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #MOU::before {
+  content: url("../img/ico-mouse/favicon.ico");
+}
+ul #TELA {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ul #TELA::before {
+  content: url("../img/ico-monitor/favicon.ico");
+}
+
+footer {
+  background-color: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+footer button {
+  padding: 3px 8px;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.34), transparent, rgba(0, 0, 0, 0.34));
+  border: none;
+}
+footer button a {
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+/*configurações de icones da lista*//*# sourceMappingURL=info.css.map */
