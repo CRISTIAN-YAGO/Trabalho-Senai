@@ -6,7 +6,7 @@
 }
 ul li:hover {
   transition: 200ms;
-  background-color: rgba(255, 255, 255, 0.56);
+  background-color: #c7bc7b6c;
 }
 ul a {
   text-decoration: none;
@@ -155,15 +155,27 @@ footer {
   flex-flow: row;
   justify-content: center;
 }
-footer button {
-  padding: 3px 8px;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.34), transparent, rgba(0, 0, 0, 0.34));
-  border: none;
-}
-footer button a {
+
+footer a {
+  font-size: 18px;
   font-weight: 600;
-  color: black;
+  background-color: #c7bc7b6c;
+  color: rgb(159, 159, 159);
   text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 11px;
+
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.581);
+}
+
+footer a:hover {
+  transition: 200ms;
+  background-color: #c7bc7b9e;
+  color: wheat;
+  text-shadow: 1.6px 1px 1px rgba(0, 0, 0, 0.656);
+  border: 1px solid #c7bc7bc8;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.863);
 }
 
 /*configurações de icones da lista*//*# sourceMappingURL=info.css.map */

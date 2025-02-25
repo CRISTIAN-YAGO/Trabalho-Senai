@@ -2,16 +2,19 @@
 
 @media screen and (max-width: 668px) {
 
-    body {
-        height: 99vh;
-    }
     tr {
         font-size: 12px;
     }
     
      nav#menu {
         max-width: 350px;
+        height: auto;
      }
+
+     ul li:hover {
+        transition: 100ms;
+        background-color: #c7bc7b6c;
+      }
 
      /*ÁREA CPU.CSS*/
         #h1 {

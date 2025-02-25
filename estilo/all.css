@@ -71,7 +71,7 @@ button {
   background-image: linear-gradient(to bottom, #ECECEC, #CBD1D2);
   border: 1px solid #9E9E9E;
   padding: 3px 5px;
-  margin: 20px;
+  margin: 10px;
   border-radius: 8px;
 }
 button:hover {
