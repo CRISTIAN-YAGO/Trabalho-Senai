@@ -27,6 +27,7 @@ body {
 }
 
 #corpo-site {
+  
   display: flex;
   flex-flow: column nowrap;
 }
@@ -154,32 +155,19 @@ ul #TELA::before {
   content: url("../img/ico-monitor/favicon.ico");
 }
 
-footer {
-  background-color: none;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
+#back {
+  position: absolute;
+  width: 3.5em;
+  right: 10vw;
 }
 
-footer a {
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #c7bc7b6c;
-  color: rgb(159, 159, 159);
-  text-decoration: none;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 11px;
-  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.581);
+#back img {
+  width: 35px;
+  opacity: 50%;
 }
 
-footer a:hover {
+#back img:hover {
   transition: 200ms;
-  background-color: #c7bc7b9e;
-  color: wheat;
-  text-shadow: 1.6px 1px 1px rgba(0, 0, 0, 0.656);
-  border: 1px solid #c7bc7bc8;
-  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.863);
+  width: 40px;
+  opacity: 100%;
 }
-
-/*configurações de icones da lista*//*# sourceMappingURL=info.css.map */
