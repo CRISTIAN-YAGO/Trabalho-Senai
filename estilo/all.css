@@ -19,6 +19,7 @@ header h1 {
   padding: 15px;
   text-align: center;
 }
+
 header img {
   padding: 10px;
   max-width: 100%;
@@ -27,11 +28,13 @@ header img {
 main {
   padding: 10px;
 }
+
 main section {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
+
 main section table {
   font-size: 18px;
   background-color: white;
@@ -40,18 +43,22 @@ main section table {
   padding: 10px;
   border-radius: 12px;
 }
+
 main section table tr {
   border: 1px solid black;
 }
+
 main section table tr:nth-child(odd) {
   background-image: linear-gradient(to right, rgba(81, 81, 81, 0.127), transparent);
 }
+
 main section table th {
   width: 120px;
   text-align: right;
   padding: 2px 4px;
   border-radius: 10px 0px 0pc 5px;
 }
+
 main section table td {
   padding: 2px 4px;
 }
@@ -63,8 +70,8 @@ main section table td {
   justify-content: center;
 }
 
-button {
-  cursor: pointer;
+#Msinfo {
+  text-decoration: none;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.744);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
@@ -74,10 +81,13 @@ button {
   margin: 10px;
   border-radius: 8px;
 }
-button:hover {
-  border: 1.2px solid rgba(83, 219, 250, 0.5490196078);
+
+#Msinfo:hover {
   transition: 200ms;
-  text-shadow: 1px 1px 1px rgba(83, 219, 250, 0.3215686275);
+  border: 1.2px solid rgba(83, 219, 250, 0.5490196078);
+  text-shadow: 1px 1px 1px rgba(83, 219, 250, 0.5490196078);
+  box-shadow: 1px 1px 2px rgba(83, 219, 250, 0.5490196078);
+  box-shadow: inset 0px 0px 2px 1px rgba(83, 219, 250, 0.5490196078);
 }
 
 footer p {
@@ -86,4 +96,4 @@ footer p {
   padding: 3px 0px;
   text-align: center;
   font: normal 700 19px "arial";
-}/*# sourceMappingURL=all.css.map */
+}
