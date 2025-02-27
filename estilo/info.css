@@ -4,6 +4,11 @@
   padding: 0px;
   margin: 0px;
 }
+
+ul li {
+  padding: 2px 0px;
+}
+
 ul li:hover {
   transition: 200ms;
   background-color: #c7bc7b6c;
@@ -13,8 +18,8 @@ ul a {
   color: wheat;
 }
 ul a:hover {
-  color: black;
   transition: 190ms;
+  text-shadow: 1.6px 1px 1px rgba(0, 0, 0, 0.656);  
 }
 
 body {
@@ -165,7 +170,6 @@ footer a {
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 11px;
-
   box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.581);
 }
 
