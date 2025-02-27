@@ -44,7 +44,7 @@ main {
 
 nav#menu {
   width: 500px;
-  height: 600px;
+  height: auto;
   background-image: url("../img/gif/fundo-aimd -.gif");
   box-shadow: inset 2px 2px 19px 5px rgb(0, 0, 0);
   
