@@ -21,4 +21,9 @@
             display: block;
         }
      /*ÁREA CPU.CSS*/
+
+     #back img {
+        width: -3vw;
+        opacity: 50%;
+      }
 }
