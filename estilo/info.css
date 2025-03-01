@@ -28,7 +28,7 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.02);
-  padding: 25px 5px;
+  padding:5px;
 }
 
 ul a {
@@ -92,29 +92,27 @@ ul #TELA::before {
     width: 380px;
   }
 
-    header#back {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    left: 12Vw;
-  }
-
   ul a {
     text-indent: 20px;
     letter-spacing: 2px;
   }
 }
 
+footer#back {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-#back img {
+
+footer#back img {
   padding: 4px 0px;
   width: 20px;
   opacity: 80%;
   border-radius: 50%;
 }
 
-#back img:hover {
+footer#back img:hover {
   transition: 200ms;
   width: 25px;
   opacity: 100%;
