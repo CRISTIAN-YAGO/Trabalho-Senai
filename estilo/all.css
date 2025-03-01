@@ -48,10 +48,6 @@ main section table tr {
   border: 1px solid black;
 }
 
-main section table tr:nth-child(odd) {
-  background-image: linear-gradient(to right, rgba(81, 81, 81, 0.127), transparent);
-}
-
 main section table th {
   width: 120px;
   text-align: right;

@@ -22,8 +22,14 @@
         }
      /*ÁREA CPU.CSS*/
 
-     #back img {
-        width: -7vw;
-        opacity: 50%;
-      }
+     /*Página informações*/
+    header#back {
+      position: fixed;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 1px;
+    }
+    /*Página informações*/
 }

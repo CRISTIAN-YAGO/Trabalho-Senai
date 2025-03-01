@@ -1,40 +1,12 @@
 @charset "UTF-8";
-* {
-  font-family: monospace;
-  padding: 0px;
-  margin: 0px;
-}
-
-ul li {
-  padding: 2px 0px;
-}
-
-ul li:hover {
-  transition: 200ms;
-  background-color: #c7bc7b6c;
-}
-ul a {
-  text-decoration: none;
-  color: wheat;
-}
-ul a:hover {
-  transition: 190ms;
-  text-shadow: 1.6px 1px 1px rgba(0, 0, 0, 0.656);  
-}
 
 body {
-  background-color: rgba(0, 0, 0, 0.9921568627);
+  background-color: #080605;
 }
 
 #corpo-site {
-  
   display: flex;
   flex-flow: column nowrap;
-}
-
-header h1 {
-  color: rgba(255, 255, 255, 0.551);
-  padding: 5px;
 }
 
 main {
@@ -47,26 +19,34 @@ nav#menu {
   width: 500px;
   height: auto;
   background-image: url("../img/gif/fundo-aimd -.gif");
-  box-shadow: inset 2px 2px 19px 5px rgb(0, 0, 0);
-  
+  box-shadow: inset 2px 2px 19px 15px rgb(0, 0, 0);
 }
 
+/*Área de icones e alinhamento dos itens da lista de produtos*/
 ul {
   list-style: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.097);
-  padding: 10px;
-  /*configurações de icones da lista*/
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 25px 5px;
 }
-ul li {
+
+ul a {
+  text-decoration: none;
+  color: wheat;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 500;
   text-indent: 15px;
   border-radius: 3px;
 }
-ul #CPU {
+
+ul li:hover {
+  transition: 200ms;
+  background-color: #c7bc7b6c;
+}
+
+#CPU, #PMAE, #RAM, #SSD, #W-COOLER, #GAB, #FONT, #GPU, #TEC, #TELA, #MOU {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -74,100 +54,68 @@ ul #CPU {
 ul #CPU::before {
   content: url("../img/ico-cpu/ico-cpu.png");
 }
-ul #PMAE {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
 ul #PMAE::before {
   content: url("../img/ico-placaMae/favicon.ico");
-}
-ul #RAM {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
 }
 ul #RAM::before {
   content: url("../img/ico-memoriaRAM/ram.png");
 }
-ul #SSD {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
 ul #SSD::before {
   content: url("../img/ico-ssd/ssd.png");
-}
-ul #W-COOLER {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
 }
 ul #W-COOLER::before {
   content: url("../img/ico-water-cooler/favicon.ico");
 }
-ul #GAB {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
 ul #GAB::before {
   content: url("../img/ico-gabinete/favicon.ico");
-}
-ul #FONT {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
 }
 ul #FONT::before {
   content: url("../img/ico-fonte/favicon.ico");
 }
-ul #GPU {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
 ul #GPU::before {
   content: url("../img/ico-placa_video/gpu.png");
-}
-ul #TEC {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
 }
 ul #TEC::before {
   content: url("../img/ico-teclado/favicon.ico");
 }
-ul #MOU {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
 ul #MOU::before {
-  content: url("../img/ico-mouse/mouse.png");
-}
-ul #TELA {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  content: url("../img/ico-mouse/mouse.png" );
 }
 ul #TELA::before {
   content: url("../img/ico-monitor/monitor.png");
 }
+/*Fim da área de icones e alinhamento dos itens da lista de produtos*/
 
-#back {
-  position: absolute;
-  width: 3.5em;
-  right: 10vw;
+@media screen and (min-width: 669px) {
+
+  nav#menu {
+    width: 380px;
+  }
+
+    header#back {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    left: 12Vw;
+  }
+
+  ul a {
+    text-indent: 20px;
+    letter-spacing: 2px;
+  }
 }
 
+
 #back img {
-  width: 35px;
-  opacity: 50%;
+  padding: 4px 0px;
+  width: 20px;
+  opacity: 80%;
+  border-radius: 50%;
 }
 
 #back img:hover {
   transition: 200ms;
-  width: 40px;
+  width: 25px;
   opacity: 100%;
 }
