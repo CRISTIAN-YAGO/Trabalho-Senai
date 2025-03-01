@@ -106,14 +106,15 @@ footer#back {
 
 
 footer#back img {
-  padding: 4px 0px;
-  width: 20px;
+  width: 25px;
   opacity: 80%;
   border-radius: 50%;
+  box-shadow: 0px 0px 8px 0px #40CFCF;
 }
 
 footer#back img:hover {
+  
   transition: 200ms;
-  width: 25px;
+  width: 27px;
   opacity: 100%;
 }
