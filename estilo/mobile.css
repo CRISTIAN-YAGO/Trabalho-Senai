@@ -32,5 +32,9 @@
       justify-content: flex-end;
       padding: 1px;
     }
+
+    header#back img {
+      width: 35px;
+    }
     /*Página informações*/
 }
