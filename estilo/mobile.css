@@ -20,4 +20,17 @@
             display: block;
         }
      /*ÁREA CPU.CSS*/
+
+     #corpo-tabela {
+        background-image: linear-gradient(80deg, grey, white);
+    }
+}
+
+@media screen and (min-width: 668px) {
+
+    #corpo-tabela {
+        background: white url(../img/paralax/financeiro-1200.jpg)no-repeat scroll center center;
+        background-size: contain;
+    }
+    
 }

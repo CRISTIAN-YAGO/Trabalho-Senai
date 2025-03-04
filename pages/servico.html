@@ -5,120 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>- Financeiro -</title>
     <link rel="stylesheet" href="../estilo/all.css">
+    <link rel="stylesheet" href="../estilo/mobile.css">
     <style>
         * {
             padding: 0;
             margin: 0;
         }
 
+        body {
+            margin-top: 50px;
+        }
+
+        section {
+            padding: 10px;
+        }
+
         #corpo-tabela {
             display: flex;
             flex-direction: column;
-
             align-items: center;
+            color: white;
         }
 
         table {
             max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.521);
+            
+
+            font-weight: bold;
         }
 
         th, td {
             border: 1px solid black;
             padding: 3px 5px;
         }
+
+        #ordemSer {
+            background-color: #FFFFFF;
+            border-collapse: collapse;
+        }
+
+        #descricao {
+            padding: 8px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #signtr{
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;           
+
+        }
+
+        #signtr p {
+            margin-top: 25px;
+            border-top: 1px solid black;
+            flex-basis: 150px;
+        }
+
+        .qntd {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <main id="corpo-tabela">
-        <table>
-            <thead>
-                <tr>
-                    <h1>Orçãmento do Serviço</h1>
-                </tr>
-                <tr>
-                    <th colspan="2">Orçamento</th>
-                    <th>R$:7.500,00</th>
-                </tr>
-                <tr>
-                    <th>Produto</th>
-                    <th>Preço</th>
-                    <th>Loja</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>CPU(PROCESSADOR)</td>
-                    <td>R$:1.349,99</td>
-                    <td>Pichau</td>
-                </tr>
-                <tr>
-                    <td>Placa Mãe</td>
-                    <td>R$:619,99</td>
-                    <td>Pichau</td>
-                </tr>
-                <tr>
-                    <td>Memória RAM</td>
-                    <td>R$:389,99</td>
-                    <td>Kabum</td>
-                </tr>
-                <tr>
-                    <td>SSD</td>
-                    <td>R$:409,99</td>
-                    <td>Terabyte</td>
-                </tr>
-                <tr>
-                    <td>Water Cooler</td>
-                    <td>R$:297,13</td>
-                    <td>Kabum</td>
-                </tr>
-                <tr>
-                    <td>Gabinete</td>
-                    <td>R$:229,90</td>
-                    <td>Amazon</td>
-                </tr>
-                <tr>
-                    <td>Fonte</td>
-                    <td>R$:419,90</td>
-                    <td>Terabyte</td>
-                </tr>
-                <tr>
-                    <td>GPU(Placa de Vídeo)</td>
-                    <td>R$:2.249,99</td>
-                    <td>Kabum</td>
-                </tr>
-                <tr>
-                    <td>Teclado</td>
-                    <td>R$:119,99</td>
-                    <td>Pichau</td>
-                </tr>
-                <tr>
-                    <td>Mouse</td>
-                    <td>R$:79,99</td>
-                    <td>Kabum</td>
-                </tr>
-                <tr>
-                    <td>Monitor</td>
-                    <td>R$:679,00</td>
-                    <td>Kabum</td>
-                </tr>
-                <tr>
-                    <td>Suporte Monitor</td>
-                    <td>R$:210,90</td>
-                    <td>Central Suportes</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="2">Valor total das peças</th>
-                    <td>R$:6.845,86</td>
-                </tr>
-                <tr>
-                    <th colspan="2">Valor da Mão de Obra</th>
-                    <td>R$:443,24</td>
-                </tr>
-            </tfoot>
-        </table>
-        <footer id="back"><a href="../index.html" target="_self" rel="prev"><img style="color: white;" src="../img/botoes/backward.gif" alt=""></a></footer>
-    </main>
+    <section>
+        <header>
+            <table id="ordemSer">
+                <thead>
+                    <tr>
+                        <th colspan="3">Ordem de Serviço 001</th>
+                    </tr>
+                    <tr>
+                        <th><img src="../img/itens-loja/logo1.png" alt=""></th>
+                        <th colspan="2">HARD-LED - Assistência Técnica em Tecnologias <br>0800 6053548 <br>atendimento@hardled.com.br <br>Rua canela n° 10 - Carapicuíba</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Cliente:</td>
+                        <td >CPF:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Endereço:</td>
+                        <td>N°:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Bairro:</td>
+                        <td>CEP:</td>
+                    </tr>
+                    <tr>
+                        <td>Telefone:</td>
+                        <td colspan="2">Email:</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Descrição do Serviço</th>
+                    </tr>
+                    <tr>
+                        <td id="descricao" colspan="3">
+                            <p>Nossa equipe especializada realizará a montagem de um computador gamer personalizado, utilizando os componentes mais avançados e de alta qualidade. O serviço inclui:</p>
+
+                            <ul>
+                                <li>- Instalação do processador (CPU)</li>
+                                <li>- Instalação da placa-mãe</li>
+                                <li>- Instalação da memória RAM</li>
+                                - Instalação do armazenamento (HD ou SSD)
+                                <li>- Instalação da placa de vídeo (GPU)</li>
+                                <li>- Instalação do fonte de alimentação</li>
+                                <li>- Instalação do sistema operacional (Windows ou Linux)</li>
+                                <li>- Configuração do sistema para otimizar o desempenho para jogos</li>
+                                <li>- Testes de funcionamento e desempenho do sistema</li>
+                            </ul>
+
+<h3>Itens Inclusos:</h3>
+
+<li>- Todos os componentes necessários para a montagem do computador</li>
+<li>- Instalação do sistema operacional</li>
+<li>- Configuração do sistema para otimizar o desempenho para jogos</li>
+<li>- Testes de funcionamento e desempenho do sistema</li>
+
+<h3>Prazo de Entrega:</h3>
+
+<p>O prazo de entrega para este serviço é de [inserir prazo de entrega] dias úteis, a partir da data de recebimento dos componentes e do pagamento.</p>
+
+<h3>Preço:</h3>
+
+<p>O preço para este serviço é de R$ [inserir preço], incluindo todos os componentes e serviços descritos acima.</p>
+
+<h3>Garantia:</h3>
+
+<p>Nossa empresa oferece uma garantia de [inserir prazo de garantia] meses para este serviço, cobrindo defeitos de fabricação e instalação.</p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Produtos Utilizados</th>
+                    </tr>
+                    <tr>
+                        <th>Qntd.</th>
+                        <th>Produtos</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>CPU(PROCESSADOR)</td>
+                        <td>R$: 1.349,99</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>Placa Mãe</td>
+                        <td>R$:619,99</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>Memória RAM</td>
+                        <td>R$: 389,99</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>SSD</td>
+                        <td>R$: 409,99</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>Water Cooler</td>
+                        <td>R$: 297,13</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>Gabinete</td>
+                        <td>R$: 229,90</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>Fonte</td>
+                        <td>R$: 419,90</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>Placa de Vídeo</td>
+                        <td>R$: 2.249,99</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Teclado</td>
+                        <td>R$: 119,99</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>Mouse</td>
+                        <td>R$: 79,99</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>Monitor</td>
+                        <td>R$: 679,00</td>
+                    </tr>
+                    <tr>
+                        <td class="qntd">1</td>
+                        <td>Suporte/Monitor</td>
+                        <td>R$: 210,90</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Este Serviço prestado possui garantia de 30 dias após a entrega</th>
+                    </tr>
+                    
+                </tfoot>
+            </table>
+            
+                <div id="signtr">
+                     <p colspan="2">Cliente</p>
+                     <p >Responsável</p>
+                </div>
+        </main>
+    </section>
+    <footer id="back"><a href="../index.html" target="_self" rel="prev"><img style="color: white;" src="../img/botoes/backward.gif" alt=""></a></footer>
 </body>
 </html>
