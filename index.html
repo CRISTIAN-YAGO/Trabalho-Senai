@@ -59,20 +59,29 @@
                     <th>Tipo de Sistema</th>
                     <td>Sistema Operacional de 64 bits, processador com base em x64</td>
                 </tr>
-                
-                <tfoot>
-                    <tr>
-                        <th>Orçamento</th>
-                        <td>R$7.000,00</td>
-                    </tr>
-                    <tr>
-                        <th>Mão de Obra</th>
-                        <td>R$500,00</td>
-                    </tr>
-                </tfoot>
             </table>
         </section>
-        <div id="btn"><a id="Msinfo" href="informacoes.html" target="_self" rel="next">Mais informações</a></div>
+        <footer>
+            <button id="menu"><img  src="img/gif/mais-informacoes.gif" alt="Imagem gif de informaçoes"></button>
+        </footer>
+        <div id="inf" style="display: none;">
+            <nav id="Informações">
+                <a href="informacoes.html" target="_self" rel="next">Informações sobre as peças</a>
+
+                <a href="pages/servico.html" target="_self" rel="next">Orçamento do Serviço</a>
+
+                <a href="https://www.flaticon.com/br/icones-gratis/gostar" title="gostar ícones" target="_blank" rel="next"><abbr title="Atribuição dos icones PNG usados neste trabalho">Gostar ícones criados por Freepik - Flaticon</abbr></a>
+            </nav>
+        </div>
     </main>
+    <script>
+        const menu = document.getElementById("menu")
+        const div_inf = document.getElementById("Informações")
+
+        menu.addEventListener("click", () => {
+            const dispmenu = document.getElementById("inf")
+            dispmenu.classList.toggle("mostrar")
+        })
+    </script>
 </body>
 </html>

@@ -46,7 +46,7 @@ ul li:hover {
   background-color: #c7bc7b6c;
 }
 
-#CPU, #PMAE, #RAM, #SSD, #W-COOLER, #GAB, #FONT, #GPU, #TEC, #TELA, #MOU {
+#CPU, #PMAE, #RAM, #SSD, #W-COOLER, #GAB, #FONT, #GPU, #TEC, #TELA, #MOU, #SP-TELA {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -84,6 +84,9 @@ ul #MOU::before {
 ul #TELA::before {
   content: url("../img/ico-monitor/monitor.png");
 }
+ul #SP-TELA::before {
+  content: url("../img/sup-monitor/favicon.ico");
+}
 /*Fim da área de icones e alinhamento dos itens da lista de produtos*/
 
 @media screen and (min-width: 669px) {
@@ -106,15 +109,14 @@ footer#back {
 
 
 footer#back img {
-  width: 25px;
+  padding: 4px 0px;
+  width: 20px;
   opacity: 80%;
   border-radius: 50%;
-  box-shadow: 0px 0px 8px 0px #40CFCF;
 }
 
 footer#back img:hover {
-  
   transition: 200ms;
-  width: 27px;
+  width: 25px;
   opacity: 100%;
 }

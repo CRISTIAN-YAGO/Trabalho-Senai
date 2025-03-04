@@ -37,23 +37,19 @@
 
   padding: 10px;
 }
-
 #link-loja a:hover {
   transition: 150ms;
   color: rgb(171, 144, 218);
   border: 0.2px dashed rgb(171, 144, 218);
   border-radius: 5px;
 }
-
 #h1 {
   font-family: var(--font-titulo);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.097);
 }
-
 #inf {
   width: 90px;
 }
-
 #back {
   width: 25px;
 }

@@ -59,37 +59,58 @@ main section table td {
   padding: 2px 4px;
 }
 
-#btn {
-  width: 100%;
+footer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: center;
+  margin: 4px 0px;
 }
 
-#Msinfo {
-  text-decoration: none;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.744);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
-  background-image: linear-gradient(to bottom, #ECECEC, #CBD1D2);
-  border: 1px solid #9E9E9E;
-  padding: 3px 5px;
-  margin: 10px;
-  border-radius: 8px;
+footer button {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 51%;
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.337);
 }
 
-#Msinfo:hover {
-  transition: 200ms;
-  border: 1.2px solid rgba(83, 219, 250, 0.5490196078);
-  text-shadow: 1px 1px 1px rgba(83, 219, 250, 0.5490196078);
-  box-shadow: 1px 1px 2px rgba(83, 219, 250, 0.5490196078);
-  box-shadow: inset 0px 0px 2px 1px rgba(83, 219, 250, 0.5490196078);
+footer button img {
+  width: 35px;
+  border-radius: 50%;
 }
 
-footer p {
-  color: white;
-  background-color: rgb(52, 52, 52);
-  padding: 3px 0px;
+div#inf {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 4px;
+}
+
+div#inf.mostrar {
+  display: flex !important;
+}
+
+nav#Informações {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  list-style: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.301);
+}
+
+
+nav#Informações a {
+  width: 100%;
   text-align: center;
-  font: normal 700 19px "arial";
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+nav#Informações a:hover {
+  transition: 250ms;
+  background-color: rgba(255, 255, 255, 0.441);
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.279);
 }
