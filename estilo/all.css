@@ -114,3 +114,25 @@ nav#Informações a:hover {
   border-radius: 4px;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.279);
 }
+
+
+/*Área de footers com botão backward*/
+footer#back {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+footer#back img {
+  padding: 4px 0px;
+  width: 25px;
+  opacity: 80%;
+  border-radius: 50%;
+}
+
+footer#back img:hover {
+  transition: 200ms;
+  width: 35px;
+  opacity: 100%;
+}/*Área de footers com botão backward*/
