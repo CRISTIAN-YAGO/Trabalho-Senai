@@ -13,11 +13,28 @@
         }
 
         body {
-            margin-top: 50px;
+            
+            background-image: linear-gradient(to left, rgba(188, 223, 228, 0.1), transparent);
+        }
+        div {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            
         }
 
-        section {
+        div a img {
+            width: 50px;
+        }
+
+        div#table {
+            display: flex;
+            flex-flow: column nowrap;
+            margin: auto;
             padding: 10px;
+            max-width: 500px;
+
+
         }
 
         #corpo-tabela {
@@ -28,7 +45,7 @@
         }
 
         table {
-            max-width: 500px;
+            
             background-color: rgba(0, 0, 0, 0.521);
             
 
@@ -50,17 +67,21 @@
             text-align: justify;
         }
 
-        ul {
+        li {
             list-style: none;
         }
 
+        h3 {
+            padding: 5px 0px;
+        }
+
         #signtr{
+            background-color: #FFFFFF;
             width: 100%;
             border: 2px solid black;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-evenly;           
-
+            justify-content: space-evenly;
         }
 
         #signtr p {
@@ -75,7 +96,12 @@
     </style>
 </head>
 <body>
-    <section>
+    <div id="table">
+        <div id="cabecalho">
+            <p>
+                Baixe o a ordem de serviço em PDF 
+            </p><a href="../ordem-serv/ordem-servico.pdf" download="ordem-servico.pdf" type="ordem-servico.pdf"><img src="../img/gif/ico-dowload.gif" alt=""></a>
+        </div>
         <header>
             <table id="ordemSer">
                 <thead>
@@ -89,20 +115,20 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="2">Cliente:</td>
-                        <td >CPF:</td>
+                        <td colspan="2">Cliente: Lucas Aquino</td>
+                        <td >CPF: 385.234.170-10</td>
                     </tr>
                     <tr>
-                        <td colspan="2">Endereço:</td>
-                        <td>N°:</td>
+                        <td colspan="2">Endereço: R. Maria Cândida Ferreira Lacerda </td>
+                        <td>N°: 35</td>
                     </tr>
                     <tr>
-                        <td colspan="2">Bairro:</td>
-                        <td>CEP:</td>
+                        <td colspan="2">Bairro: Vila Veloso</td>
+                        <td>CEP: 06332-335</td>
                     </tr>
                     <tr>
-                        <td>Telefone:</td>
-                        <td colspan="2">Email:</td>
+                        <td>Telefone: 4187-0555</td>
+                        <td colspan="2">Email: lucas.A192@gmail.com</td>
                     </tr>
                     <tr>
                         <th colspan="3">Descrição do Serviço</th>
@@ -123,24 +149,24 @@
                                 <li>- Testes de funcionamento e desempenho do sistema</li>
                             </ul>
 
-<h3>Itens Inclusos:</h3>
+            <h3>Itens Inclusos:</h3>
 
-<li>- Todos os componentes necessários para a montagem do computador</li>
-<li>- Instalação do sistema operacional</li>
-<li>- Configuração do sistema para otimizar o desempenho para jogos</li>
-<li>- Testes de funcionamento e desempenho do sistema</li>
+            <li>- Todos os componentes necessários para a montagem do computador</li>
+            <li>- Instalação do sistema operacional</li>
+            <li>- Configuração do sistema para otimizar o desempenho para jogos</li>
+            <li>- Testes de funcionamento e desempenho do sistema</li>
 
-<h3>Prazo de Entrega:</h3>
+            <h3>Prazo de Entrega:</h3>
 
-<p>O prazo de entrega para este serviço é de [inserir prazo de entrega] dias úteis, a partir da data de recebimento dos componentes e do pagamento.</p>
+            <p>O prazo de entrega para este serviço é de [inserir prazo de entrega] dias úteis, a partir da data de recebimento dos componentes e do pagamento.</p>
 
-<h3>Preço:</h3>
+            <h3>Preço:</h3>
 
-<p>O preço para este serviço é de R$ [inserir preço], incluindo todos os componentes e serviços descritos acima.</p>
+            <p>O preço para este serviço é de R$ [inserir preço], incluindo todos os componentes e serviços descritos acima.</p>
 
-<h3>Garantia:</h3>
+            <h3>Garantia:</h3>
 
-<p>Nossa empresa oferece uma garantia de [inserir prazo de garantia] meses para este serviço, cobrindo defeitos de fabricação e instalação.</p>
+            <p>Nossa empresa oferece uma garantia de [inserir prazo de garantia] meses para este serviço, cobrindo defeitos de fabricação e instalação.</p>
 
                         </td>
                     </tr>
@@ -226,7 +252,8 @@
                      <p >Responsável</p>
                 </div>
         </main>
+        <footer id="back"><a href="../index.html" target="_self" rel="prev"><img style="color: white;" src="../img/botoes/backward.gif" alt=""></a></footer>
     </section>
-    <footer id="back"><a href="../index.html" target="_self" rel="prev"><img style="color: white;" src="../img/botoes/backward.gif" alt=""></a></footer>
+</div>
 </body>
 </html>
