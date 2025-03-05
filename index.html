@@ -9,15 +9,92 @@
     <link rel="stylesheet" href="estilo/mobile.css">
     <style>
         body {
-            height: 100vh;
             background-image: linear-gradient(to top left, rgba(30, 21, 161, 0.282), transparent);
+        }
+
+        footer {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+
+            padding-top: 15px;
+        }
+
+        #rdpé {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.74);
+            background-color: rgba(0, 0, 0, 0.081);
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.337);
+        }
+
+        #rdpé p {
+            text-shadow: 1px 1px 1px black;
+            line-height: 18px;
+            padding: 10px;
+        }
+
+        #rdpé a {
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        #rdpé a:hover {
+            transition: 300ms;
+            color: rgba(254, 38, 254, 0.4);
+        }
+
+        aside p {
+            font-size: 20px;
+        }
+
+        #creditos {
+            width: 100%;
+            background-color: #000000;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            height: 70px;
+        }
+
+        #creditos a {
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0px 0px 3px 0px white;
+        }
+
+        #creditos #social {
+            
+            justify-content: space-evenly;
+            align-content: center;
+        }
+        #creditos a:hover {
+            background-color: rgb(147, 204, 240);
+            box-shadow: 0px 0px 5px 1px rgb(147, 204, 240);
+        }
+
+        #creditos p {
+            align-content: flex-end;
+        }
+
+        #git {
+            content: url('img/ico-social/github-x32.png');
+        }
+        #lin {
+            content: url('img/ico-social/linkedin-x32.png');
+        }
+        #fac {
+            content: url('img/ico-social/facebook-x32.png');
+        }
+        #social {
+            width: 60%;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>
-            Informações do Desktop
+            Configurações do Sistema
         </h1>
         <img src="img/logo.png" alt="logo do windows 10">
     </header>
@@ -62,19 +139,33 @@
             </table>
         </section>
         <footer>
-            <button id="menu"><img  src="img/gif/mais-informacoes.gif" alt="Imagem gif de informaçoes"></button>
+            <img id="menu" src="img/gif/mais-informacoes.gif" alt="Imagem gif de informaçoes">
         </footer>
         <div id="inf" style="display: none;">
             <nav id="Informações">
                 <a href="informacoes.html" target="_self" rel="next">Informações sobre as peças</a>
 
                 <a href="pages/servico.html" target="_self" rel="next">Ordem de Serviço</a>
-
-                <a href="https://www.flaticon.com/br/icones-gratis/gostar" title="gostar ícones" target="_blank" rel="next"><abbr title="Atribuição dos icones PNG usados neste trabalho">Gostar ícones criados por Freepik - Flaticon</abbr></a>
             </nav>
         </div>
     </main>
-    <script>
+    <footer id="rdpé">
+        <aside><abbr title="Atribuição dos icones PNG usados neste trabalho"><p>Ícones criados por Freepik - <a href="https://www.flaticon.com/" target="_blank" rel="link">www.flaticon.com</a></p></abbr></aside>
+
+        <p id="agrd">Agradeço à Escola SENAI Nadir Dias de Figueiredo e ao professor Fausto pelo apoio e conhecimento compartilhado no curso de Hardware.</p>
+
+        <div id="creditos">
+            <p>Trabalho Escolar desenvolvido por Cristian Yago&copy;</p>
+            
+                <div id="social">
+                    <a id="git" href="https://github.com/CRISTIAN-YAGO" target="_blank" rel="link"></a>
+                    <a id="lin" href="https://www.linkedin.com/in/cristian-bezerra-95869a2a7/" target="_blank" rel="link"></a>
+                    <a id="fac" href="https://www.facebook.com/cristian.bezerra.965/" target="_blank" rel="link"></a>
+                </div>
+        </div>
+    </footer>
+</body>
+<script>
         const menu = document.getElementById("menu")
         const div_inf = document.getElementById("Informações")
 
@@ -83,5 +174,4 @@
             dispmenu.classList.toggle("mostrar")
         })
     </script>
-</body>
 </html>

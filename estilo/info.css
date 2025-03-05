@@ -85,7 +85,7 @@ ul #TELA::before {
   content: url("../img/ico-monitor/monitor.png");
 }
 ul #SP-TELA::before {
-  content: url("../img/sup-monitor/favicon.ico");
+  content: url("../img/sup-monitor/favicon.png");
 }
 /*Fim da área de icones e alinhamento dos itens da lista de produtos*/
 

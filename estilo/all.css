@@ -63,18 +63,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 4px 0px;
+  
 }
 
-footer button {
+footer img {
   cursor: pointer;
-  background-color: white;
-  border-radius: 51%;
-  border: none;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.337);
-}
-
-footer button img {
   width: 35px;
   border-radius: 50%;
 }
@@ -91,26 +84,33 @@ div#inf.mostrar {
 }
 
 nav#Informações {
+  background-color: rgba(155, 227, 243, 0.104);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   list-style: none;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.301);
+  padding: 3px;
+  box-shadow: 0px 0px 5px 0px rgba(36, 134, 205, 0.301);
+  border-radius: 4px;
 }
 
 
 nav#Informações a {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.762), transparent, transparent, transparent, rgba(255, 255, 255, 0.762));
+  font-weight: 500;
   width: 100%;
   text-align: center;
   padding: 5px;
+  margin: 3px;
   text-decoration: none;
   color: black;
   border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  border-radius: 4px;
 }
 
 nav#Informações a:hover {
   transition: 250ms;
+  
   background-color: rgba(255, 255, 255, 0.441);
   border-radius: 4px;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.279);
