@@ -100,6 +100,7 @@ nav#Informações {
 
 
 nav#Informações a {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.762), transparent, transparent, transparent, rgba(255, 255, 255, 0.762));
   width: 100%;
   text-align: center;
   padding: 5px;
