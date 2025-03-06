@@ -25,7 +25,14 @@
         background-image: linear-gradient(80deg, grey, white);
     }
 
-    #img {
-        float: none;
+    /*CORES DOS ICONES SOCIAIS DO INDEX*/
+    #git {
+        background-color: #9708FF !important;
+    }
+    #lin {
+        background-color: #1368BF !important;
+    }
+    #fac {
+        background-color: #1F7BF2 !important;
     }
 }
