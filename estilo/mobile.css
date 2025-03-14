@@ -35,4 +35,9 @@
     #fac {
         background-color: #1F7BF2 !important;
     }
+
+    /*PAGES*/
+    #inf-produto {
+       flex-flow: column nowrap;
+       }
 }

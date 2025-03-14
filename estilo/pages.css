@@ -27,14 +27,20 @@
 }
 
 #img-produto {
-  height: max-content;
+  
+  display: block;
+
+  max-width: 80%;
+  max-height: 80%;
+  min-width: 30%;
+  min-height: 30%;
 }
 
 #link-loja {
   font-family: var(--font-link);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
-
+  border-top: 2px solid rgba(0, 0, 0, 0.326);
   padding: 10px;
 }
 #link-loja a:hover {
@@ -71,20 +77,12 @@ body main {
   margin: auto;
 }
 
-article {
+#inf-produto {
   display: flex;
-  flex-flow: row nowrap;
-  align-content: flex-start;
-}
+  align-items: center;
+ }
 
-article img {
-  max-width: 80%;
-  max-height: 80%;
-  min-width: 30%;
-  min-height: 30%;
-}
-
-article section h2 {
+article h2 {
   font: normal 600 18px var(--font-titulo);
   font-size: 17px;
   text-align: justify;
@@ -92,15 +90,15 @@ article section h2 {
   border-bottom-style: inset;
 }
 
-article section p {
+section p {
   text-align: center;
 }
 
-article section p a {
+section p a {
   text-decoration: none;
 }
 
-article section aside {
+section aside {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -117,4 +115,27 @@ footer a {
   display: flex;
   padding: 3px 5px;
   text-decoration: none;
+}
+
+table {
+  width: 100%;
+}
+
+caption {
+  color: rgba(0, 0, 0, 0.615);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.378);
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 7px 0px;
+}
+
+th {
+ font-family: monospace;
+ font-size: 1.1rem;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
 }
